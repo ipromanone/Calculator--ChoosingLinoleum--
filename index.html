@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">   
+	<title>Калькулятор расчета стоимости товаров для сайта | jQuery</title>
+	<link type="text/css" rel="stylesheet" href="css/demo.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/calc.js"></script>
+</head>
+<body>
+
+<div id="content">			
+
+<form>
+	<div class="product">
+		<div class="product_id">
+			<img src="img/1.png" alt=""/>
+			<h2>Темный линолиум</h2>
+			<input type="checkbox" name="lakirov1" class="id" data-check="140"><label> 140 руб.</label> кв.м. 
+		</div>
+		<div class="product_id">
+			<img src="img/2.png" alt=""/>
+			<h2>Светлый линолиум</h2>
+			<input type="checkbox" name="lakirov2"  class="id" data-check="90"><label> 90 руб.</label> кв.м. 
+		</div>
+		<div class="product_id">
+			<img src="img/3.png" alt=""/>
+			<h2>Премиум линолиум</h2>
+			<input type="checkbox" name="lakirov3" class="id" data-check="120"><label> 120 руб.</label> кв.м. 
+		</div>
+		<div class="product_id">
+			<img src="img/4.png" alt=""/>
+			<h2>Матерчатый линолиум</h2>
+			<input type="checkbox" name="lakirov4" class="id" data-check="70"><label> 70 руб.</label> кв.м. 
+		</div>
+		<div class="product_id">
+			<img src="img/5.png" alt=""/>
+			<h2>Светлый линолиум</h2>
+			<input type="checkbox" name="lakirov5" class="id" data-check="280"><label> 280 руб.</label> кв.м. 
+		</div>
+	</div>
+	
+	<div class="block">
+		<div class="block_id"><input type="text" value="" class="razmer" name="razmer" placeholder="Введите размер"><span> кв.м</span></div>
+		<div class="block_id">
+			<select name="gorod" id="gorod">
+				<option value="0">Не важно</option>
+				<option value="300">Москва</option>
+				<option value="800">Санкт-Петербург</option>
+				<option value="1200">Воронеж</option>
+			</select>
+			<span> город доставки</span>
+		</div>
+		<div class="block_id"><input type="text" value="" class="kypon" name="kyp" placeholder="Введите код купона"><span> купон на скидку </br> <i>(пример: введите - 2301)</i></span></div>
+	</div>
+	
+	<div class="guarantee">
+		<div class="guarantee_id">
+			<input type="radio" checked name="garant" data-check="10"><span> 1 год гарантии</span></br>
+			<input type="radio" name="garant" data-check="20"><span> 2 года гарантии</span>
+		</div>
+		<div class="guarantee_id">Итого: <div id="summ">0 руб</div></div>
+	</div>	
+</form>
+
+</div>	
+
+</body>
+</html>

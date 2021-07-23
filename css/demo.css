@@ -1,0 +1,60 @@
+/*** Материал подготовлен сайтом roothelp.ru ***/
+
+#content{
+	width:1000px;
+	margin:20px auto 0px;
+}
+
+/*** Калькулятор расчета стоимости товаров для сайта | jQuery ***/
+
+.product_id h2{
+	font-size: 20px;
+}
+
+.product_id label{
+	font-size: 22px;
+	color: #b30000;
+	font-weight: bold;
+}
+
+.block_id input{
+	border: 1px solid #000;
+	height: 30px;
+	padding: 0 5px;
+}
+
+.block_id select{
+	border: 1px solid #000;
+	height: 30px;
+	padding: 0 5px;
+}
+
+.block_id span, .guarantee_id span{
+	font-size: 18px;
+}
+
+.block_id span>i{
+	font-size: 16px;
+}
+
+#summ{
+	color: #b30000;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.product, .block, .guarantee{
+	display: flex;
+    flex-flow: row nowrap;
+	flex-wrap: wrap;
+}
+
+.product_id, .block_id{
+	width: 33%;
+	margin: 3% 0;
+}
+
+ .guarantee_id{
+	width: 50%;
+	margin: 3% 0;
+}
